@@ -3,12 +3,30 @@
 Ένα console-based παιχνίδι τύπου Wordle γραμμένο σε C++.
 
 ## Χαρακτηριστικά
-- Υποστήριξη χρωμάτων (Green/Yellow/Gray)
-- Προσθήκη/Διαγραφή λέξεων από αρχείο
-- Προβολή στατιστικών παικτών
+- Υποστήριξη χρωμάτων (Green/Yellow/Gray) μέσω Windows Console
+- Προσθήκη/Διαγραφή λέξεων από αρχείο (`words.txt`)
+- Προβολή στατιστικών παικτών (νίκες, ποσοστά, streaks)
+- Μενού επιλογών: Παιχνίδι, Διαχείριση λέξεων, Στατιστικά
 - Πλήρως playable σε Windows terminal
 
+## Τεχνολογίες
+- Γλώσσα: C++
+- Compiler: GCC (με υποστήριξη C++11)
+- Βιβλιοθήκες: `<iostream>`, `<vector>`, `<fstream>`, `<random>`, `<windows.h>`
+
 ## Τρόπος εκτέλεσης
-1. Άνοιξε το `.cpp` με έναν compiler (π.χ. g++).
-2. Βεβαιώσου ότι υπάρχει το αρχείο `words.txt` με λέξεις.
-3. Κάνε compile και εκτέλεση:
+
+### Dev-C++
+1. Άνοιξε το αρχείο `main.cpp` ή `WORDLE.cpp`.
+2. Πήγαινε:  
+   `Tools → Compiler Options → Settings → Code Generation → Language standard`  
+   και επίλεξε `-std=c++11`.
+3. Κάνε Compile & Run.
+
+### Εναλλακτικά με g++ (CLI)
+1. Βεβαιώσου ότι υπάρχει το αρχείο `words.txt` στον ίδιο φάκελο.
+2. Άνοιξε Command Prompt στο φάκελο του project.
+3. Κάνε compile:
+
+```bash
+g++ -std=c++11 -o wordle main.cpp
