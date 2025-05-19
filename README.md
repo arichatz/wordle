@@ -22,11 +22,3 @@
    `Tools → Compiler Options → Settings → Code Generation → Language standard`  
    και επίλεξε `-std=c++11`.
 3. Κάνε Compile & Run.
-
-### Εναλλακτικά με g++ (CLI)
-1. Βεβαιώσου ότι υπάρχει το αρχείο `words.txt` στον ίδιο φάκελο.
-2. Άνοιξε Command Prompt στο φάκελο του project.
-3. Κάνε compile:
-
-```bash
-g++ -std=c++11 -o wordle main.cpp
